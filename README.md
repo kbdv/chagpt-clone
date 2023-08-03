@@ -1,6 +1,7 @@
 # ChatGPT clone
 A reverse-engineered clone of the OpenAI chat bot. 
-<br>Asynchronous calls to the OpenAPI using React and Node.js. 
+<br>Asynchronous calls to the OpenAPI using JavaScript. 
+<br>App built with Node.js and React. 
 <br>Deployed with Vercel and GitHub pages.
 <br>Try it out <a href="https://kbdv.github.io/chagpt-clone/">here</a>!
 
