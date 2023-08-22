@@ -156,14 +156,12 @@ export default function App() {
                     )}
                 </ul>
                 <nav>
-                    <p>Made by KrisB. 2023</p>
                 </nav>
             </section>
 
             <section className='main'>
                 {!currentTitle &&
                     <div>
-                        <h1><br></br>KrisGPT</h1>
                         <p className='disclaimer'><br></br>A functional clone of OpenAI's chat bot.
                             <br></br>
                             <br></br>
