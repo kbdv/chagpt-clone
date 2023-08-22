@@ -13,8 +13,8 @@ The back end is deployed with <a href='https://vercel.com/'>Vercel</a> and the f
 1. Make an OpenAI account and get an API key <a href='https://platform.openai.com/account/api-keys'>here</a>.
 2. Copy and paste your API key in an .env file and assign it to the variable API_KEY. Place that file in the backend folder.
 3. Edit the completion.js as needed to modify the settings and deploy the backend files on a host website.
-4. (Ignore the files in the static folder). Instead, deploy the public and src folders to a front end host site.
 5. The appearance of the site can be modified in src/index.css, the front end functions can be modified in src/App.js.
+6. Deploy the public and src folders to a front end host site.
 
 
 
