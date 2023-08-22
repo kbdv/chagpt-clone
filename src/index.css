@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #eaeaea;
+    display: flex;
+}
+
+.side-bar {
+    background-color: #dadada;
+    height: 100vh;
+    width: 13%;
+    font-size: 14px;
+    min-width:90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* this can only be used if we have display:flex */
+    align-items: center; /* this can only be used if we have display:flex */
+    text-align: center;
+}
+
+button {
+    background-color: rgba(191, 225, 255, 0.29);
+    border-radius: 5px;
+    font-size: 16px;
+    min-height:70px;
+    border: solid 1.5px rgba(255, 255, 255, 0.5);
+    padding: 2% 0;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    overflow:auto;
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+.history li:hover {
+    background-color: #eaeaea;
+}
+
+nav {
+    border-top: solid 1.5px rgb(234, 234, 234); /* This adds an aesthetic horizontal line at the top */
+    margin: 5%;
+    min-height:90px;
+    padding:3%;
+}
+
+.history {
+    padding: 0.5% 2%;
+    margin: 5px;
+    height: 100%;
+}
+
+
+.history li {
+    list-style-type: none;
+    padding: 10px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow:hidden;
+    height:20px;
+    margin: 10px 0;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.info {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 11px;
+    margin:30px 7% 35px 7%;
+    overflow-wrap:normal;
+}
+
+#submit {
+    position: absolute;
+    bottom: 20px;
+    right: 13%;
+    cursor: pointer;
+}
+
+.userInput {
+    position: relative;
+    display:flex;
+    width: 100%;
+    max-width: 650px;
+}
+
+input {
+    width: 100%;
+    height:40px;
+    border: none;
+    flex:1;
+    margin:0 9%;
+    font-size: 14px;
+    background-color: #dadada;
+    padding: 12px 50px 12px 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 10px 55px; /* from left to right :  black color with very little opacity, 0 in the x axis, 10px in the y axis, 55px of blur */
+}
+
+input:focus {
+    outline: none;
+}
+.sendIcon{
+    width:20px;
+    height:20px;
+    fill: #626262;
+}
+
+.sendIcon:hover{
+    fill: #55a5fc;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.disclaimer{
+    font-style:italic;
+    color: rgba(51, 51, 51, 0.5);
+    margin:0 10%;
+}
+
+.feed {
+    overflow-y: auto;
+}
+
+.feed>li {
+    display: flex;
+    list-style: none;
+    border-radius: 5px;
+    background-color: #dadada;
+    text-align: left;
+    padding: 25px;
+    margin: 20px 9% 0 1%;
+}
+
+.feed>p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+.bubble{
+display:flex;
+    flex-direction: column;
+    padding:0;
+}
+
+.feed p.role{
+   color: #55a5fc;
+    font-style: italic;
+    /*min-width: 100px;*/
+    margin:0;
+}
+
+.alert{
+    color: #b23333;
+}
+
+.bouncing-loader {
+    display: flex;
+   text-align: center;
+}
+
+.bouncing-loader > div {
+    width: 8px;
+    height: 8px;
+    margin: 3px 6px;
+    border-radius: 50%;
+    background-color: #a3a1a1;
+    opacity: 1;
+    animation: bouncing-loader 0.6s infinite alternate;
+}
+
+@keyframes bouncing-loader {
+    to {
+        opacity: 0.1;
+        transform: translateY(-10px);
+    }
+}
+
+.bouncing-loader > div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bouncing-loader > div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
