@@ -123,7 +123,7 @@ export default function App() {
 
         try {
             // communicating to the backend server hosted on Vercel
-            const response = await fetch('https://clonegpt-kris-2022.vercel.app/api/completions', options)
+            const response = await fetch('path_to_backend_server/api/completions', options)
             const data = await response.json()
             setAiReply(data.choices[0].message)
             setIsBusy(false)
